@@ -471,19 +471,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item">
-                    <a class="nav-link text-light px-3" href="#home">Home</a>
+                    <a class="nav-link text-light px-3" href="index.html">Home</a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link text-light px-3" href="about.html">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light px-3" href="#services">Services</a>
+                    <a class="nav-link text-light px-3" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light px-3" href="#process">Process</a>
+                    <a class="nav-link text-light px-3" href="process.html">Process</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light px-3" href="#contact">Contact</a>
+                    <a class="nav-link text-light px-3" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-3" href="blog.html">Blogs</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light px-3" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a class="btn btn-neon px-4 py-2" href="#contact">Start Project</a>
+                    <a class="btn btn-neon px-4 py-2" href="contact.html">Start Project</a>
                 </li>
             </ul>
         </div>
@@ -831,6 +843,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <li><i class="bi bi-check-circle-fill text-gradient me-2"></i> Audience retention analytics</li>
                         <li><i class="bi bi-check-circle-fill text-gradient me-2"></i> Sustainable revenue streams</li>
                     </ul>
+                    
                 </div>
             </div>
 
@@ -1181,6 +1194,535 @@ document.addEventListener("DOMContentLoaded", () => {
   color: #9b5cff;
 }
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<section id="clients" class="clients-section py-5" style="background:#0f0f14;">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title gradient-text fw-bold display-5">Our Clients</h2>
+            <p class="section-subtitle text-light opacity-75 fs-5">
+                Trusted by brands, creators, and fast-growing businesses
+            </p>
+        </div>
+
+        <!-- Owl Carousel -->
+        <div class="owl-carousel clients-carousel">
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/6f2cff/ffffff&text=Client+1" class="client-logo">
+            </div>
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/9b5cff/ffffff&text=Client+2" class="client-logo">
+            </div>
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/6f2cff/ffffff&text=Client+3" class="client-logo">
+            </div>
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/9b5cff/ffffff&text=Client+4" class="client-logo">
+            </div>
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/6f2cff/ffffff&text=Client+5" class="client-logo">
+            </div>
+
+            <div class="client-card p-4 rounded-4">
+                <img src="https://dummyimage.com/200x90/9b5cff/ffffff&text=Client+6" class="client-logo">
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+.clients-section {
+    background: #0f0f14;
+}
+
+/* Gradient Title */
+.gradient-text {
+    background: linear-gradient(90deg, #6f2cff, #9b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Client Card */
+.client-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(155,92,255,0.25);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.client-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(155,92,255,0.4);
+}
+
+/* Logo */
+.client-logo {
+    max-height: 80px;
+    margin: auto;
+    filter: brightness(0.9);
+    transition: 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+    filter: brightness(1.2);
+}
+
+/* Owl Dots */
+.owl-theme .owl-dots .owl-dot span {
+    background: #6f2cff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #9b5cff;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+$('.clients-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+    responsive: {
+        0: { items: 2 },
+        576: { items: 3 },
+        768: { items: 4 },
+        1200: { items: 5 }
+    }
+});
+</script>
+
+<section id="careers" class="careers-section py-5" style="background:#0f0f14;">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title gradient-text fw-bold display-5">Careers at Purple Wolfy</h2>
+            <p class="section-subtitle text-light opacity-75 fs-5">
+                Join our team and build the future of digital growth
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+
+            <!-- Left Content -->
+            <div class="col-lg-6">
+                <h3 class="text-white fw-bold mb-3">
+                    Work With a Fast-Growing Digital Agency 🚀
+                </h3>
+                <p class="text-light opacity-75">
+                    At Purple Wolfy, we’re building a team of creative thinkers, growth hackers, strategists, and 
+                    performance marketers. If you’re passionate about digital innovation, we’d love to have you onboard.
+                </p>
+                <p class="text-light opacity-75">
+                    Enjoy flexible work culture, rapid career growth, exciting client projects, and a collaborative team environment.
+                </p>
+
+                <a href="#jobs" class="btn btn-neon mt-3 px-5 py-3 fw-bold">
+                    View Open Positions <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+            <!-- Right Benefits -->
+            <div class="col-lg-6">
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <div class="career-box p-4 rounded-4 shadow">
+                            <h4 class="fw-bold gradient-text">Growth Opportunities</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                Learn, scale your skills, and grow with fast-moving projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="career-box p-4 rounded-4 shadow">
+                            <h4 class="fw-bold gradient-text">Creative Work Culture</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                Work in a dynamic, collaborative, and innovation-driven environment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="career-box p-4 rounded-4 shadow">
+                            <h4 class="fw-bold gradient-text">Flexible Work Mode</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                Remote, hybrid, and flexible working options available.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="career-box p-4 rounded-4 shadow">
+                            <h4 class="fw-bold gradient-text">Competitive Salary</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                Industry-leading compensation and performance-based incentives.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Open Positions -->
+        <div id="jobs" class="mt-5">
+            <h3 class="text-white fw-bold mb-4 text-center">Open Positions</h3>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="job-card p-4 rounded-4 shadow">
+                        <h5 class="text-white fw-bold">Social Media Manager</h5>
+                        <p class="text-light opacity-75 mb-2">Location: Remote | Experience: 1–3 Years</p>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="job-card p-4 rounded-4 shadow">
+                        <h5 class="text-white fw-bold">Performance Marketing Executive</h5>
+                        <p class="text-light opacity-75 mb-2">Location: Hybrid | Experience: 2–4 Years</p>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="job-card p-4 rounded-4 shadow">
+                        <h5 class="text-white fw-bold">Video Editor (Short-Form)</h5>
+                        <p class="text-light opacity-75 mb-2">Location: Remote | Experience: 1–2 Years</p>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="job-card p-4 rounded-4 shadow">
+                        <h5 class="text-white fw-bold">Content Strategist</h5>
+                        <p class="text-light opacity-75 mb-2">Location: Onsite | Experience: 2–5 Years</p>
+                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.careers-section {
+    background: #0f0f14;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #6f2cff, #9b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Career Feature Boxes */
+.career-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(155,92,255,0.2);
+    transition: 0.3s ease;
+}
+
+.career-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(155,92,255,0.4);
+}
+
+/* Job Cards */
+.job-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(155,92,255,0.25);
+    transition: 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(155,92,255,0.4);
+}
+
+/* Neon Button */
+.btn-neon {
+    background: linear-gradient(90deg, #9b5cff, #6f2cff);
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.35s ease;
+    box-shadow: 0 0 15px #9b5cff, 0 0 35px #6f2cff;
+}
+
+.btn-neon:hover {
+    box-shadow: 0 0 25px #9b5cff, 0 0 60px #6f2cff;
+    transform: translateY(-2px);
+}
+</style>
+
+<section id="blog" class="blog-section py-5" style="background:#0f0f14;">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title gradient-text fw-bold display-5">Latest Blogs</h2>
+            <p class="section-subtitle text-light opacity-75 fs-5">
+                Insights, strategies, and trends from the world of digital growth
+            </p>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="row g-4">
+
+            <!-- Blog 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card rounded-4 shadow overflow-hidden">
+                    <img src="https://dummyimage.com/600x350/6f2cff/ffffff&text=Blog+1" class="img-fluid blog-img">
+                    <div class="blog-content p-4">
+                        <span class="blog-category">Marketing</span>
+                        <h5 class="text-white fw-bold mt-2">
+                            How to Grow a YouTube Channel in 2025
+                        </h5>
+                        <p class="text-light opacity-75">
+                            Proven strategies to scale your YouTube presence and maximize engagement.
+                        </p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card rounded-4 shadow overflow-hidden">
+                    <img src="https://dummyimage.com/600x350/9b5cff/ffffff&text=Blog+2" class="img-fluid blog-img">
+                    <div class="blog-content p-4">
+                        <span class="blog-category">Social Media</span>
+                        <h5 class="text-white fw-bold mt-2">
+                            Instagram Reels Strategy for Explosive Growth
+                        </h5>
+                        <p class="text-light opacity-75">
+                            Learn how to dominate Reels and build a loyal audience faster.
+                        </p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card rounded-4 shadow overflow-hidden">
+                    <img src="https://dummyimage.com/600x350/6f2cff/ffffff&text=Blog+3" class="img-fluid blog-img">
+                    <div class="blog-content p-4">
+                        <span class="blog-category">AI Marketing</span>
+                        <h5 class="text-white fw-bold mt-2">
+                            How AI is Changing Digital Marketing Forever
+                        </h5>
+                        <p class="text-light opacity-75">
+                            Discover the impact of AI tools on marketing automation and performance.
+                        </p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-neon px-5 py-3 fw-bold">
+                View All Blogs <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.blog-section {
+    background: #0f0f14;
+}
+
+/* Gradient Title */
+.gradient-text {
+    background: linear-gradient(90deg, #6f2cff, #9b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Blog Card */
+.blog-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(155,92,255,0.2);
+    transition: 0.35s ease;
+}
+
+/* Hover Effect */
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(155,92,255,0.4);
+}
+
+/* Blog Image */
+.blog-img {
+    transition: 0.4s ease;
+}
+
+.blog-card:hover .blog-img {
+    transform: scale(1.05);
+}
+
+/* Category Badge */
+.blog-category {
+    display: inline-block;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #6f2cff, #9b5cff);
+    color: white;
+    font-weight: 600;
+}
+
+/* Blog Link */
+.blog-link {
+    color: #9b5cff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+/* Neon Button */
+.btn-neon {
+    background: linear-gradient(90deg, #9b5cff, #6f2cff);
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.35s ease;
+    box-shadow: 0 0 15px #9b5cff, 0 0 35px #6f2cff;
+}
+
+.btn-neon:hover {
+    box-shadow: 0 0 25px #9b5cff, 0 0 60px #6f2cff;
+    transform: translateY(-2px);
+}
+</style>
+
+<section id="videos" class="video-section py-5" style="background:#0f0f14;">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title gradient-text fw-bold display-5">Watch Our Work</h2>
+            <p class="section-subtitle text-light opacity-75 fs-5">
+                Explore our latest videos, case studies, and creative projects
+            </p>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card rounded-4 shadow overflow-hidden">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content p-3">
+                        <h5 class="text-white fw-bold mb-1">YouTube Growth Case Study</h5>
+                        <p class="text-light opacity-75 mb-0">How we scaled a channel to 1M+ subscribers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card rounded-4 shadow overflow-hidden">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content p-3">
+                        <h5 class="text-white fw-bold mb-1">Short-Form Viral Strategy</h5>
+                        <p class="text-light opacity-75 mb-0">Reels & Shorts growth secrets</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card rounded-4 shadow overflow-hidden">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/l482T0yNkeo" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-content p-3">
+                        <h5 class="text-white fw-bold mb-1">Podcast Studio Showcase</h5>
+                        <p class="text-light opacity-75 mb-0">Behind the scenes at Purple Wolfy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-neon px-5 py-3 fw-bold">
+                View More Videos <i class="bi bi-play-circle ms-2"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.video-section {
+    background: #0f0f14;
+}
+
+/* Gradient Title */
+.gradient-text {
+    background: linear-gradient(90deg, #6f2cff, #9b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Video Card */
+.video-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(155,92,255,0.2);
+    transition: 0.35s ease;
+}
+
+/* Hover Glow */
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(155,92,255,0.45);
+}
+
+/* Video Title */
+.video-content h5 {
+    line-height: 1.4;
+}
+</style>
+
+
 
     <!-- CTA Section -->
    <section id="contact" class="cta-section position-relative py-5">
