@@ -494,6 +494,7 @@
     background: linear-gradient(90deg, #6f2cff, #9b5cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 /* Neon buttons */
@@ -554,11 +555,7 @@ window.addEventListener('scroll', function() {
     <!-- Hero Section -->
   <section id="home" class="hero-section position-relative">
     <!-- Background floating shapes -->
-    <div class="hero-bg position-absolute w-100 h-100" style="top:0; left:0; z-index:-2;">
-        <div class="shape" style="width:300px; height:300px; top:10%; left:5%; background: rgba(111,44,255,0.15); border-radius:50%; filter: blur(100px); position:absolute;"></div>
-        <div class="shape" style="width:400px; height:400px; bottom:10%; right:10%; background: rgba(155,92,255,0.12); border-radius:50%; filter: blur(150px); position:absolute;"></div>
-        <div class="shape" style="width:250px; height:250px; top:50%; left:50%; background: rgba(111,44,255,0.1); border-radius:50%; filter: blur(120px); position:absolute; transform: translate(-50%, -50%);"></div>
-    </div>
+    
 
     <div class="container position-relative" style="z-index:1;">
         <div class="row align-items-center">
@@ -670,9 +667,10 @@ window.addEventListener('scroll', function() {
     50% { transform: translateY(-20px) translateX(15px); }
     100% { transform: translateY(0) translateX(0); }
 }
-</style>
 
-    <style>
+
+
+
         .hero-section {
     position: relative;
     padding: 120px 0 80px;
